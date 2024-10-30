@@ -32,33 +32,33 @@ global.imagen11 = fs.readFileSync("./Menu2.jpg")
 global.imagen12 = fs.readFileSync("./Menu2.jpg")
 global.imagen13 = fs.readFileSync("./Menu2.jpg")
 
-global.img = fs.readFileSync("./Menu2.jpg")
-global.img2 = fs.readFileSync("./Menu2.jpg")
+global.img = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img2 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
 
-global.img3 = fs.readFileSync("./Menu2.jpg") //prem
-global.img4 = fs.readFileSync("./Menu2.jpg") //prem
+global.img3 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg' //prem
+global.img4 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg' //prem
 
-global.img5 = fs.readFileSync("./Menu2.jpg")
-global.img6 = fs.readFileSync("./Menu2.jpg")
-global.img7 = fs.readFileSync("./Menu2.jpg")
-global.img8 = fs.readFileSync("./Menu2.jpg")
-global.img9 = fs.readFileSync("./Menu2.jpg")
+global.img5 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img6 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img7 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img8 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img9 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
 
-global.img10 = fs.readFileSync("./Menu2.jpg")
-global.img11 = fs.readFileSync("./Menu2.jpg")
-global.img12 = fs.readFileSync("./Menu2.jpg")
-global.img13 = fs.readFileSync("./Menu2.jpg")
-global.img14 = fs.readFileSync("./Menu2.jpg")
-global.img15 = fs.readFileSync("./Menu2.jpg")
+global.img10 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img11 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img12 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img13 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img14 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img15 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
 
-global.img16 = fs.readFileSync("./Menu2.jpg") //+18
+global.img16 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg' //+18
 
-global.img17 = fs.readFileSync("./Menu2.jpg")
-global.img18 = fs.readFileSync("./Menu2.jpg")
+global.img17 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
+global.img18 = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
 
-global.logogit = fs.readFileSync("./Menu2.jpg")
+global.logogit = 'https://i.ibb.co/vhmyTKg/Menu2.jpg'
 
-global.gataVidMenu = fs.readFileSync("./Menu2.jpg")
+global.gataVidMenu = ['https://i.ibb.co/vhmyTKg/Menu2.jpg'].getRandom()
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18].getRandom()
 global.gataImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13].getRandom()
 
