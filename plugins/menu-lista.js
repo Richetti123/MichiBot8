@@ -109,26 +109,42 @@ let menu = `
 ⊜ *Pasatiempo(s)* ➺ ${user.pasatiempo === 0 ? '*Sin Registro*' : user.pasatiempo + '\n'}
 ⊜ *Experiencia ➟* ${exp} ⚡
 ⊜ *Diamantes ➟* ${limit} 💎
-⊜ *GataCoins ➟* ${money} 🐈
+⊜ *${global.packname}Coins ➟* ${money} 🐈
 ⊜ *Tokens ➟* ${joincount} 🪙`.trim()
       
 const buttonParamsJson = JSON.stringify({
-title: "VER LISTA",
-description: "Infórmate por medios oficiales sobre GataBot",
+title: "VER COMANDOS",
+description: "Infórmate por medios oficiales sobre MichiBot",
 sections: [
 { title: "ℹ️ Información", highlight_label: "Popular",
 rows: [
-{ header: "✅ Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales sobre GataBot", id: usedPrefix + "cuentasgb" },
-{ header: "📢 Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
-{ header: "🎁 Donar", title: "🔓 Para: Todos", description: "GataBot se mantiene funcionando gracias a donaciones ¡tú también puedes sumarte apoyando el proyecto!", id: usedPrefix + "donar" }
+{ header: "💸 Comprar", title: "🔓 Para: Todos", description: "MichiBot se mantiene funcionando gracias a que lo compran, tu tambien puedes adquirirlo", id: usedPrefix + "adquirir" }
 ]},
-{ title: "🔖 Atajos", highlight_label: "Popular",
+{ title: "🔖 Atajos", highlight_label: "Nuevo",
 rows: [
-{ header: "🆕 Ser Bot (código)", title: "🔓 Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
-{ header: "🤖 Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
-{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
-{ header: "😺 Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra GataBot", id: usedPrefix + "estado" }
+{ header: "🤫 Sorteo", title: "🔐 Para: Admins", description: "Escoje un ganador al azar", id: usedPrefix + "sorteo" },
+{ header: "🎧 Youtube play", title: "🔓 Para: Todos", description: "Descarga canciones de youtube al momento", id: usedPrefix + "play" },
+{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Selecciona esto si deseas saber la rapidez del bot", id: usedPrefix + "ping" },
 ]},
+{ title: "👾 Comandos Free Fire", highlight_label: "Nuevo",
+rows: [
+{ header: "🎲 Donador de sala", title: "🔐 Para: Admins", description: "Escoge dos donadores al azar, uno para primera sala y otro en caso de tercera sala", id: usedPrefix + "donarsala" },
+{ header: "📋 Lista 4 vs 4", title: "🔐 Para: Admins", description: "Tira una lista de 4 vs 4 para rellenar", id: usedPrefix + "4vs4" },
+{ header: "🏷️ Etiqueta general", title: "🔐 Para: Admins", description: "El bot menciona a todo el grupo", id: usedPrefix + "todos" },
+{ header: "👩‍🦰📋 Interna femenina", title: "🔐 Para: Admins", description: "Tira una lista de interna femenina para rellenar", id: usedPrefix + "internafem" },
+{ header: "👨‍🦰📋​ Interna masculina", title: "🔐 Para: Admins", description: "Tira una lista de interna masculina para rellenar", id: usedPrefix + "internamasc" },
+{ header: "👩‍🦰👨‍🦰📋​ Interna mixta", title: "🔐 Para: Admins", description: "Tira una lista de interna mixta para rellenar", id: usedPrefix + "internamixta" },
+{ header: "🔓​ Abrir grupo", title: "🔐 Para: Admins", description: "Todos pueden hablar en el grupo", id: usedPrefix + "grupo abrir" },
+{ header: "🔐​ Cerrar el grupo", title: "🔐 Para: Admins", description: "Solo admins pueden hablar en el grupo", id: usedPrefix + "grupo cerrar" }
+]},
+{ title: "🗂️ Configuracion Grupos", highlight_label: "Popular",
+rows: [
+{ header: "🫶 Activar bienvenidas", title: "🔐 Para: Admins", description: "Activa la bienvenida del grupo", id: usedPrefix + "on welcome" },
+{ header: "👋 Desactivar Bienvenidas", title: "🔐 Para: Admins", description: "Desactiva la bienvenida del grupo", id: usedPrefix + "off welcome" },
+{ header: "🤐 Activar Modo admin", title: "🔐 Para: Admins", description: "Activa el bot para que solo puedan usarlo los admins", id: usedPrefix + "on modoadmin" },
+{ header: "🤗​ Desactivar moodo admin", title: "🔐 Para: Admins", description: "Activa el bot para que pueda usarlo todo el grupo", id: usedPrefix + "off modoadmin" }
+]},
+
 { title: "Ⓜ️ Menú", highlight_label: "Popular",
 rows: [
 { header: "⭐ Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "allmenu" }
@@ -169,7 +185,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ⊜ *Pasatiempo(s)* ➺ ${user.pasatiempo === 0 ? '*Sin Registro*' : user.pasatiempo + '\n'}
 ⊜ *Experiencia ➟* ${exp} ⚡
 ⊜ *Diamantes ➟* ${limit} 💎
-⊜ *GataCoins ➟* ${money} 🐈
+⊜ *${global.packname}Coins ➟* ${money} 🐈
 ⊜ *Tokens ➟* ${joincount} 🪙
 
 *╭━〔 🐈 OPCIONES DE MENU 🐈 〕⬣*
@@ -232,7 +248,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃
 *╰━━━━━━━━━━━━━⬣*`.trim()
-await conn.sendFile(m.chat, gataImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu}}}) 
+await conn.sendFile(m.chat, gataImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: wm, previewType: 0, thumbnail: imagen4, sourceUrl: redesMenu}}}) 
 await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m }) 
 //conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
 }} catch (e) {
