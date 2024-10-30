@@ -5,7 +5,7 @@ import axios from 'axios';
 import fg from 'api-dylux';
 
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-    if (!text) throw `${mg}${mid.smsMalused4}\n*${usedPrefix + command} Billie Eilish - Bellyache*`;
+    if (!text) throw `${mg}${mid.smsMalused4}\n*${usedPrefix + command} Feid - De Tanto Chimbiar*`;
 
     try {
         if (command === 'play.1') {
@@ -16,7 +16,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
                         mediaType: 1,
                         description: null,
                         title: wm,
-                        body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝗦𝗔𝗽𝗽',
+                        body: wm,
                         previewType: 0,
                         thumbnail: gataImg,
                         sourceUrl: accountsgb
@@ -54,7 +54,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
                         mediaType: 1,
                         description: null,
                         title: wm,
-                        body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝗦𝗔𝗽𝗽',
+                        body: wm,
                         previewType: 0,
                         thumbnail: gataImg,
                         sourceUrl: accountsgb
