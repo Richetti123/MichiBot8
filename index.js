@@ -26,7 +26,7 @@ say('Michi\nBot', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Por Richetti y GeriPium`, {
+say(`Por Richetti y GeriPium\nsi eres mi noviecita geri te amo`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
